@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+file=$1
+echo "Compiling $file"
+latexmk -pvc -pdf -synctex=1 -shell-escape -g $file -auxdir=build -outdir=build
+
